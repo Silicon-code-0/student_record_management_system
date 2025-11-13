@@ -26,21 +26,39 @@ Tech Stack
 | Build Tool | Maven                              |
 | IDE        | NetBeans  |
 
-📁Project Structure
-
 SRMS/
 │
-├── src/main/java/com/tcet/canteenfoodorderingsystem/controller/
-│   ├── AdminController.java
-│   ├── DatabaseConnection.java
-│   └── ...
+├── src/
+│   └── main/
+│       ├── java/
+│       │   └── com/
+│       │       └── tcet/
+│       │           └── srms/
+│       │               ├── controller/
+│       │               │   ├── AddStudentController.java
+│       │               │   ├── DashboardController.java
+│       │               │   ├── LoginController.java
+│       │               │   └── ...
+│       │               │
+│       │               ├── model/
+│       │               ├──DbConnection.java
+│       │               └── ...
+│       │             
+│       │
+│       └── resources/
+│           └── com/
+│               └── tcet/
+│                   └── srms/
+│                       └── view/
+│                           ├── StudentDetail.fxml
+│                           ├── DashboardScreen.fxml
+│                           ├── LoginPage.fxml
+│                           └── ...
 │
-├── src/main/resources/com/tcet/canteenfoodorderingsystem/view/
-│   ├── AdminLogin.fxml
-│   └── ...
 │
 ├── pom.xml
 └── README.md
+
 
 
 🚀How to Run the Project
