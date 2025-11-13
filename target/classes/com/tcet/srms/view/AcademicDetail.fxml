@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<ScrollPane fitToWidth="true" prefHeight="600" prefWidth="700" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.tcet.srms.controller.AcademicController">
+
+    <content>
+        <VBox prefHeight="999.0" prefWidth="724.0" spacing="25.0">
+            <padding>
+                <Insets bottom="30" left="30" right="30" top="20" />
+            </padding>
+
+            <!-- ===== Title ===== -->
+            
+            <Button fx:id="backButton" text="← Back" GridPane.columnIndex="0" GridPane.rowIndex="0">
+                <style>
+                    -fx-font-family: "Candara";
+                    -fx-font-size: 14px;
+                    -fx-font-weight: bold;
+                    -fx-text-fill: #696868;
+                    -fx-background-color: transparent;
+                    -fx-border-color: #696868;
+                    -fx-border-radius: 5;
+                    -fx-padding: 5 10 5 10;
+                </style>
+            </Button>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="280.0" layoutY="14.0" prefHeight="30.0" prefWidth="635.0" text=" Academic Details" textFill="#271466">
+                <font>
+                    <Font name="Bookman Old Style Bold" size="24.0" />
+                </font>
+                <style>
+                    -fx-font-weight: bold;
+                </style>
+            </Label>
+
+            <!-- Section Title -->
+            <Label layoutX="36.0" layoutY="60.0" text="3.Enter your Academic Details" textFill="#271466">
+                <font>
+                    <Font name="Candara Bold" size="20.0" />
+                </font>
+                <style>
+                    -fx-font-weight: bold;
+                    -fx-underline: true;
+                </style>
+            </Label>
+
+            <!-- ===== Primary Education ===== -->
+            <TitledPane expanded="true" text="Primary Education">
+                <content>
+                    <GridPane hgap="12.0" vgap="10.0">
+                        <children>
+                            <Label text="Board:" GridPane.columnIndex="0" GridPane.rowIndex="0">
+                                <font>
+                                    <Font name="Bookman Old Style Bold" size="14.0" />
+                                </font>
+                            </Label>
+                            <ComboBox fx:id="primaryBoardCombo" prefHeight="26.0" prefWidth="250.0" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+
+                            <Label text="School Name:" GridPane.columnIndex="0" GridPane.rowIndex="1">
+                                <font>
+                                    <Font name="Bookman Old Style Bold" size="14.0" />
+                                </font>
+                            </Label>
+                            <TextField fx:id="primarySchoolField" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+
+                            <Label text="City:" GridPane.columnIndex="0" GridPane.rowIndex="2">
+                                <font>
+                                    <Font name="Bookman Old Style Bold" size="14.0" />
+                                </font>
+                            </Label>
+                            <TextField fx:id="primaryCityField" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+
+                            <Label text="Year of Passing:" GridPane.columnIndex="0" GridPane.rowIndex="3">
+                                <font>
+                                    <Font name="Bookman Old Style Bold" size="14.0" />
+                                </font>
+                            </Label>
+                            <ComboBox fx:id="primaryYearCombo" prefHeight="26.0" prefWidth="242.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+
+                            <Label text="Percentage:" GridPane.columnIndex="0" GridPane.rowIndex="4">
+                                <font>
+                                    <Font name="Bookman Old Style Bold" size="14.0" />
+                                </font>
+                            </Label>
+                            <TextField fx:id="primaryPercentageField" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                        </children>
+                 
+                    </GridPane>
+                </content>
+                <font>
+                    <Font name="Bookman Old Style Bold" size="14.0" />
+                </font>
+            </TitledPane>
+
+            <!-- ===== Secondary Education ===== -->
+            <TitledPane expanded="true" text="Secondary Education">
+                <content>
+                    <GridPane hgap="12.0" vgap="10.0">
+                        <children>
+                            <Label text="Board:" GridPane.columnIndex="0" GridPane.rowIndex="0">
+                                <font>
+                                    <Font name="Bookman Old Style Bold" size="14.0" />
+                                </font>
+                            </Label>
+                            <ComboBox fx:id="secondaryBoardCombo" prefHeight="27.0" prefWidth="239.0" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+
+                            <Label text="College Name:" GridPane.columnIndex="0" GridPane.rowIndex="1">
+                                <font>
+                                    <Font name="Bookman Old Style Bold" size="14.0" />
+                                </font>
+                            </Label>
+                            <TextField fx:id="secondaryCollegeField" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+
+                            <Label text="City:" GridPane.columnIndex="0" GridPane.rowIndex="2">
+                                <font>
+                                    <Font name="Bookman Old Style Bold" size="14.0" />
+                                </font>
+                            </Label>
+                            <TextField fx:id="secondaryCityField" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+
+                            <Label text="Year of Passing:" GridPane.columnIndex="0" GridPane.rowIndex="3">
+                                <font>
+                                    <Font name="Bookman Old Style Bold" size="14.0" />
+                                </font>
+                            </Label>
+                            <ComboBox fx:id="secondaryYearCombo" prefHeight="27.0" prefWidth="234.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+
+                            <Label text="Percentage:" GridPane.columnIndex="0" GridPane.rowIndex="4">
+                                <font>
+                                    <Font name="Bookman Old Style Bold" size="14.0" />
+                                </font>
+                            </Label>
+                            <TextField fx:id="secondaryPercentageField" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                        </children>
+                        <columnConstraints>
+                            <ColumnConstraints percentWidth="20.0" />
+                            <ColumnConstraints percentWidth="40.0" />
+                        </columnConstraints>
+                        
+                    </GridPane>
+                </content>
+                <font>
+                    <Font name="Bookman Old Style Bold" size="14.0" />
+                </font>
+            </TitledPane>
+
+            <!-- ===== Graduation Details ===== -->
+            <TitledPane expanded="true" text="Graduation Details">
+                <content>
+                    <GridPane hgap="12.0" vgap="10.0">
+                        <children>
+                            <Label text="Board:" GridPane.columnIndex="0" GridPane.rowIndex="0">
+                                <font>
+                                    <Font name="Bookman Old Style Bold" size="14.0" />
+                                </font>
+                            </Label>
+                            <ComboBox fx:id="graduationBoardCombo" prefHeight="27.0" prefWidth="236.0" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+
+                            <Label text="College Name:" GridPane.columnIndex="0" GridPane.rowIndex="1">
+                                <font>
+                                    <Font name="Bookman Old Style Bold" size="14.0" />
+                                </font>
+                            </Label>
+                            <TextField fx:id="graduationCollegeField" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+
+                            <Label text="City:" GridPane.columnIndex="0" GridPane.rowIndex="2">
+                                <font>
+                                    <Font name="Bookman Old Style Bold" size="14.0" />
+                                </font>
+                            </Label>
+                            <TextField fx:id="graduationCityField" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+
+                            <Label text="Year of Passing:" GridPane.columnIndex="0" GridPane.rowIndex="3">
+                                <font>
+                                    <Font name="Bookman Old Style Bold" size="14.0" />
+                                </font>
+                            </Label>
+                            <ComboBox fx:id="graduationYearCombo" prefHeight="27.0" prefWidth="234.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+
+                            <Label text="Percentage:" GridPane.columnIndex="0" GridPane.rowIndex="4">
+                                <font>
+                                    <Font name="Bookman Old Style Bold" size="14.0" />
+                                </font>
+                            </Label>
+                            <TextField fx:id="graduationPercentageField" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                        </children>
+                        <columnConstraints>
+                            <ColumnConstraints percentWidth="20.0" />
+                            <ColumnConstraints percentWidth="40.0" />
+                        </columnConstraints>
+                        
+                    </GridPane>
+                </content>
+                <font>
+                    <Font name="Bookman Old Style Bold" size="14.0" />
+                </font>
+            </TitledPane>
+
+            <!-- ===== Buttons ===== -->
+            <HBox alignment="CENTER" spacing="15.0">
+                <children>
+                   
+                    <Button fx:id="saveButton" onAction="#handleSave" text="Save">
+                        <style>
+                            -fx-font-family: "Candara";
+                            -fx-font-size: 14px;
+                            -fx-font-weight: bold;
+                            -fx-text-fill: #0d47a1;
+                            -fx-background-color: #B3BFFF;
+                            -fx-border-radius: 5;
+                            -fx-padding: 8 25 8 25;
+                        </style>
+                    </Button>
+
+                    <Button fx:id="nextButton3" onAction="#goToCourseDetail" text="Next">
+                        <style>
+                            -fx-font-family: "Candara";
+                            -fx-font-size: 14px;
+                            -fx-font-weight: bold;
+                            -fx-text-fill: white;
+                            -fx-background-color: #4CAF50;
+                            -fx-border-radius: 5;
+                            -fx-padding: 8 25 8 25;
+                        </style>
+                    </Button>
+                </children>
+            </HBox>
+        </VBox>
+    </content>
+</ScrollPane>

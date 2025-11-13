@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="480.0" prefWidth="826.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/25" fx:controller="com.tcet.srms.controller.SearchController">
+    <children>
+        <VBox layoutY="-4.0" prefHeight="490.0" prefWidth="827.0">
+            <children>
+                <Label text="Student Record Management System" textFill="#271466">
+                    <font>
+                        <Font name="Bookman Old Style Bold" size="24.0" />
+                    </font>
+                    <VBox.margin>
+                        <Insets left="180.0" top="20.0" />
+                    </VBox.margin>
+                </Label>
+                <Label text="Find Student records quickly and efficiently." textFill="#8c8a8a">
+                    <font>
+                        <Font name="Bookman Old Style" size="13.0" />
+                    </font>
+                    <VBox.margin>
+                        <Insets left="270.0" top="5.0" />
+                    </VBox.margin>
+                </Label>
+                <VBox maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="200.0" prefWidth="729.0" style="-fx-background-color: white; -fx-border-radius: 10px; -fx-border-style: solid; -fx-border-color: white; -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 10, 0, 0, 5);">
+                    <VBox.margin>
+                        <Insets left="50.0" top="10.0" />
+                    </VBox.margin>
+                    <children>
+                        <Label text="Search Students">
+                            <font>
+                                <Font name="Candara Bold" size="18.0" />
+                            </font>
+                            <VBox.margin>
+                                <Insets left="20.0" top="5.0" />
+                            </VBox.margin>
+                        </Label>
+                        <Label text="Enter Student name,ID or roll number to begin your search." textFill="#898585">
+                            <VBox.margin>
+                                <Insets left="20.0" top="3.0" />
+                            </VBox.margin>
+                        </Label>
+                        <Label text="Name" textFill="#696868">
+                            <VBox.margin>
+                                <Insets left="20.0" top="20.0" />
+                            </VBox.margin>
+                            <font>
+                                <Font name="Candara Bold" size="14.0" />
+                            </font>
+                        </Label>
+                        <TextField maxHeight="-Infinity" maxWidth="-Infinity" prefWidth="200.0" promptText="e.g., Riya Sharma" style="-fx-border-color: #8c8a8a; -fx-border-radius: 8px; -fx-background-color: white;">
+                            <VBox.margin>
+                                <Insets left="20.0" top="10.0" />
+                            </VBox.margin>
+                        </TextField>
+                        <Label text="Student ID" textFill="#696868">
+                            <font>
+                                <Font name="Candara Bold" size="14.0" />
+                            </font>
+                            <VBox.margin>
+                                <Insets left="235.0" top="-54.0" />
+                            </VBox.margin>
+                        </Label>
+                        <TextField maxWidth="-Infinity" prefWidth="200.0" promptText="e.g., 001" style="-fx-border-color: #8c8a8a; -fx-border-radius: 8px; -fx-background-color: white;">
+                            <VBox.margin>
+                                <Insets left="235.0" top="10.0" />
+                            </VBox.margin>
+                        </TextField>
+                        <Label text="Roll Number" textFill="#696868">
+                            <font>
+                                <Font name="Candara Bold" size="14.0" />
+                            </font>
+                            <VBox.margin>
+                                <Insets left="450.0" top="-54.0" />
+                            </VBox.margin>
+                        </Label>
+                        <TextField maxWidth="-Infinity" prefWidth="200.0" promptText="e.g., 72" style="-fx-border-color: #8c8a8a; -fx-border-radius: 8px; -fx-background-color: white;">
+                            <VBox.margin>
+                                <Insets left="450.0" top="10.0" />
+                            </VBox.margin>
+                        </TextField>
+                        <Button mnemonicParsing="false" style="-fx-background-color: #B3BFFF;" text="Search">
+                            <VBox.margin>
+                                <Insets left="330.0" top="20.0" />
+                            </VBox.margin>
+                            <padding>
+                                <Insets bottom="10.0" left="30.0" right="30.0" top="10.0" />
+                            </padding>
+                            <font>
+                                <Font name="Candara Bold" size="14.0" />
+                            </font>
+                        </Button>
+                    </children>
+                </VBox>
+                <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                    <children>
+                        <TableView layoutX="-1.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="200.0" prefWidth="827.0" style="-fx-border-color: #E0E0E0; -fx-border-width: 1;">
+                            <columns>
+                                <TableColumn prefWidth="75.0" text="Student ID" />
+                                <TableColumn prefWidth="75.0" text="Name" />
+                                <TableColumn prefWidth="75.0" text="Last name" />
+                                <TableColumn prefWidth="75.0" text="Roll No" />
+                                <TableColumn prefWidth="75.0" text="Gender" />
+                                <TableColumn prefWidth="75.0" text="aadhar_id" />
+                                <TableColumn prefWidth="75.0" text="Email ID" />
+                                <TableColumn prefWidth="123.199951171875" text="Address" />
+                                <TableColumn prefWidth="95.199951171875" text="Contact" />
+                                <TableColumn minWidth="8.0001220703125" prefWidth="79.9998779296875" text="Blood Group" />
+                            </columns>
+                        </TableView>
+                    </children>
+                </AnchorPane>
+            </children>
+        </VBox>
+    </children>
+</AnchorPane>

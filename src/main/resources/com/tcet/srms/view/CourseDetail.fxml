@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="637.0" prefWidth="975.0" style="-fx-background-color: #f5f8fd;" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.tcet.srms.controller.CourseDetailController">
+
+    <children>
+
+        <!-- Back Button -->
+        <Button fx:id="backButton" layoutX="36.0" layoutY="20.0" text="← Back">
+            <style>
+                -fx-font-family: "Candara";
+                -fx-font-size: 14px;
+                -fx-font-weight: bold;
+                -fx-text-fill: #696868;
+                -fx-background-color: transparent;
+                -fx-border-color: #696868;
+                -fx-border-radius: 5;
+                -fx-padding: 5 10 5 10;
+            </style>
+        </Button>
+
+        <!-- Title -->
+        <Label layoutX="358.0" layoutY="20.0" text="Enter Course Details" textFill="#271466">
+            <font>
+                <Font name="Bookman Old Style Bold" size="24.0" />
+            </font>
+            <style>
+                -fx-font-weight: bold;
+            </style>
+        </Label>
+
+        <!-- Section Title -->
+        <Label layoutX="19.0" layoutY="77.0" text="4. Course Details" textFill="#271466">
+            <font>
+                <Font name="Bookman Old Style" size="20.0" />
+            </font>
+            <style>
+                -fx-font-weight: bold;
+                -fx-underline: true;
+            </style>
+        </Label>
+
+        <!-- Form Grid -->
+        <GridPane hgap="20.0" layoutX="19.0" layoutY="109.0" prefHeight="380.0" prefWidth="937.0" style="-fx-background-color: white;                          -fx-border-radius: 10px;                          -fx-border-color: white;                          -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 10, 0, 0, 5);                          -fx-padding: 20;" vgap="12.0">
+            <columnConstraints>
+                <ColumnConstraints prefWidth="200.0" />
+                <ColumnConstraints prefWidth="200.0" />
+                <ColumnConstraints prefWidth="200.0" />
+                <ColumnConstraints prefWidth="200.0" />
+            </columnConstraints>
+
+            <children>
+
+                <!-- Row 1 -->
+                <Label text="Course Code" textFill="#696868" GridPane.columnIndex="0" GridPane.rowIndex="0">
+                    <font>
+                        <Font name="Bookman Old Style Bold" size="14.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="courseCodeField" prefWidth="280.0" promptText="Enter course code" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+
+                <Label prefWidth="280.0" text="Course Level" textFill="#696868" GridPane.columnIndex="2" GridPane.rowIndex="0">
+                    <font>
+                        <Font name="Bookman Old Style Bold" size="14.0" />
+                    </font>
+                </Label>
+                <ChoiceBox fx:id="courseLevelChoice" prefWidth="280.0" GridPane.columnIndex="3" GridPane.rowIndex="0" />
+
+                <!-- Row 2 -->
+                <Label prefWidth="280.0" text="College Name" textFill="#696868" GridPane.columnIndex="0" GridPane.rowIndex="1">
+                    <font>
+                        <Font name="Bookman Old Style Bold" size="14.0" />
+                    </font>
+                </Label>
+                <ChoiceBox fx:id="collegeChoice" prefWidth="280.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+
+                <Label prefWidth="280.0" text="Enrolled Course" textFill="#696868" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                    <font>
+                        <Font name="Bookman Old Style Bold" size="14.0" />
+                    </font>
+                </Label>
+                <ChoiceBox fx:id="enrolledCourseChoice" maxWidth="Infinity" prefWidth="280.0" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+
+                <!-- Row 3 -->
+                <Label prefWidth="280.0" text="Department" textFill="#696868" GridPane.columnIndex="0" GridPane.rowIndex="2">
+                    <font>
+                        <Font name="Bookman Old Style Bold" size="14.0" />
+                    </font>
+                </Label>
+                <ChoiceBox fx:id="departmentChoice" prefWidth="280.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+
+                <Label prefWidth="280.0" text="Course Credits" textFill="#696868" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                    <font>
+                        <Font name="Bookman Old Style Bold" size="14.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="creditsField" prefWidth="280.0" promptText="Enter credits" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+
+                <!-- Row 4 -->
+                <Label prefWidth="280.0" text="Course Duration" textFill="#696868" GridPane.columnIndex="0" GridPane.rowIndex="3">
+                    <font>
+                        <Font name="Bookman Old Style Bold" size="14.0" />
+                    </font>
+                </Label>
+                <ChoiceBox fx:id="durationChoice" prefWidth="280.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+
+                <Label prefWidth="280.0" text="Semesters" textFill="#696868" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                    <font>
+                        <Font name="Bookman Old Style Bold" size="14.0" />
+                    </font>
+                </Label>
+                <ChoiceBox fx:id="semesterChoice" prefWidth="280.0" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+
+                <!-- Row 5 -->
+                <Label text="Mode of Study" textFill="#696868" GridPane.columnIndex="0" GridPane.rowIndex="4">
+                    <font>
+                        <Font name="Bookman Old Style Bold" size="14.0" />
+                    </font>
+                </Label>
+                <ChoiceBox fx:id="modeChoice" prefWidth="280.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                <Button fx:id="saveButton" prefHeight="38.0" prefWidth="206.0" style="-fx-background-color: #B3BFFF;                                -fx-text-fill: #0d47a1;                                -fx-font-weight: bold;" text="Save" GridPane.columnIndex="1" GridPane.rowIndex="7">
+                    <padding>
+                        <Insets bottom="10" left="30" right="30" top="10" />
+                    </padding>
+                </Button>
+
+                <Button fx:id="submitButton" prefHeight="38.0" prefWidth="202.0" style="-fx-background-color: #271466;                                -fx-text-fill: white;                                -fx-font-weight: bold;" text="Submit" GridPane.columnIndex="2" GridPane.rowIndex="7">
+                    <padding>
+                        <Insets bottom="10" left="30" right="30" top="10" />
+                    </padding>
+                </Button>
+
+            </children>
+         
+         
+        </GridPane>
+
+        <!-- Buttons -->
+        <HBox layoutX="600.0" layoutY="580.0" spacing="20.0" />
+
+    </children>
+</AnchorPane>

@@ -1,0 +1,15 @@
+com\tcet\srms\controller\AcademicController.class
+com\tcet\srms\main\AppMain.class
+com\tcet\srms\controller\CourseDetailController.class
+com\tcet\srms\modal\Parents_detail_master.class
+com\tcet\srms\controller\FacultyController.class
+com\tcet\srms\controller\LoginController.class
+com\tcet\srms\modal\Student_detail_master.class
+com\tcet\srms\modal\Academic_detail_master.class
+com\tcet\srms\controller\DashboardScreenController.class
+com\tcet\srms\modal\DbConnection.class
+com\tcet\srms\controller\ParentsDetailController.class
+com\tcet\srms\modal\testDb.class
+com\tcet\srms\controller\NavigationHelper.class
+com\tcet\srms\controller\StudentDetailController.class
+com\tcet\srms\controller\SearchController.class

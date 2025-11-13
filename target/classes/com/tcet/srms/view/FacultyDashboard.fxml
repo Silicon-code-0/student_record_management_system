@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx/25"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.tcet.srms.controller.FacultyController"
+            prefHeight="600" prefWidth="900">
+
+    <!-- Sidebar -->
+    <left>
+        <VBox spacing="20" style="-fx-background-color: #e3f2fd; -fx-padding: 20;" prefWidth="200">
+            <Label text="SRMS" style="-fx-font-size: 28px; -fx-text-fill: #0d47a1; -fx-font-weight: bold;" />
+            <Label text="Faculty Dashboard" style="-fx-font-size: 14px; -fx-text-fill: #37474f;" />
+
+            <Button fx:id="searchBtn" text="Search Student"  prefWidth="160" />
+            <Button fx:id="manageMarksBtn" text="Manage Student Marks"  prefWidth="160" />
+        </VBox>
+    </left>
+
+    <!-- Top Header -->
+    <top>
+        <HBox spacing="10" alignment="CENTER_RIGHT" style="-fx-padding: 10; -fx-background-color: #ffffff;">
+            <TextField fx:id="searchField" promptText="Search…" prefWidth="200" />
+            <MenuButton text="Admin">
+                <items>
+                    <MenuItem text="Profile" />
+                    <MenuItem text="Logout"  />
+                </items>
+            </MenuButton>
+        </HBox>
+    </top>
+
+    <!-- Main Content Area -->
+    <center>
+        <AnchorPane fx:id="mainContent" style="-fx-padding: 20;">
+            <Label text="Dashboard Overview" layoutX="20" layoutY="20" style="-fx-font-size: 20px; -fx-font-weight: bold;" />
+
+            <Button layoutX="20" layoutY="80" text="SEARCH STUDENT" prefWidth="200" prefHeight="60"
+                    style="-fx-background-color: #2196f3; -fx-text-fill: white; -fx-font-weight: bold;" />
+
+            <Button layoutX="240" layoutY="80" text="MANAGE STUDENT MARKS" prefWidth="200" prefHeight="60"
+                    style="-fx-background-color: #2196f3; -fx-text-fill: white; -fx-font-weight: bold;" />
+        </AnchorPane>
+    </center>
+</BorderPane>

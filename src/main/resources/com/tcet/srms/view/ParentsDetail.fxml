@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.control.ChoiceBox?>
+
+<AnchorPane prefHeight="702.0" prefWidth="920.0"
+            style="-fx-background-color: #f5f8fd;"
+            xmlns="http://javafx.com/javafx/25"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.tcet.srms.controller.ParentsDetailController">
+
+    <children>
+
+        <!-- Back Button -->
+        <Button fx:id="backButton" text="← Back" layoutX="24.0" layoutY="20.0">
+            <style>
+                -fx-font-family: "Candara";
+                -fx-font-size: 14px;
+                -fx-font-weight: bold;
+                -fx-text-fill: #696868;
+                -fx-background-color: transparent;
+                -fx-border-color: #696868;
+                -fx-border-radius: 5;
+                -fx-padding: 5 10 5 10;
+            </style>
+        </Button>
+
+        <!-- Title -->
+        <Label layoutX="280.0" layoutY="14.0" text="Enter Parent Details" textFill="#271466">
+            <font>
+                <Font name="Bookman Old Style Bold" size="24.0" />
+            </font>
+            <style>
+                -fx-font-weight: bold;
+            </style>
+        </Label>
+
+        <!-- Section Title -->
+        <Label layoutX="36.0" layoutY="60.0" text="2. Parent Details" textFill="#271466">
+            <font>
+                <Font name="Candara Bold" size="20.0" />
+            </font>
+            <style>
+                -fx-font-weight: bold;
+                -fx-underline: true;
+            </style>
+        </Label>
+
+        <!-- Form Grid -->
+        <GridPane layoutX="24.0" layoutY="95.0"
+                  hgap="20.0" vgap="12.0"
+                  prefHeight="415.0" prefWidth="862.0"
+                  style="-fx-background-color: white;
+                         -fx-border-radius: 10px;
+                         -fx-border-color: white;
+                         -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 10, 0, 0, 5);
+                         -fx-padding: 20;">
+            <columnConstraints>
+                <ColumnConstraints prefWidth="200.0" />
+                <ColumnConstraints prefWidth="250.0" />
+                <ColumnConstraints prefWidth="200.0" />
+                <ColumnConstraints prefWidth="250.0" />
+            </columnConstraints>
+
+            <rowConstraints>
+                <RowConstraints prefHeight="35.0" />
+                <RowConstraints prefHeight="35.0" />
+                <RowConstraints prefHeight="35.0" />
+                <RowConstraints prefHeight="35.0" />
+                <RowConstraints prefHeight="35.0" />
+                <RowConstraints prefHeight="35.0" />
+                <RowConstraints prefHeight="35.0" />
+                <RowConstraints prefHeight="35.0" />
+            </rowConstraints>
+
+            <children>
+
+                <!-- Row 0 -->
+                <Label text="Father's Name" textFill="#696868" GridPane.columnIndex="0" GridPane.rowIndex="0">
+                    <font>
+                        <Font name="Candara" size="14.0" />
+                    </font>
+                    <style>-fx-font-weight: bold;</style>
+                </Label>
+                <TextField fx:id="fatherNameField" promptText="Enter father's full name" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="0" />
+
+                <!-- Row 1 -->
+                <Label text="Father's Email" textFill="#696868" GridPane.columnIndex="0" GridPane.rowIndex="1">
+                    <font>
+                        <Font name="Candara" size="14.0" />
+                    </font>
+                    <style>-fx-font-weight: bold;</style>
+                </Label>
+                <TextField fx:id="fatherEmailField" promptText="Enter father's email address" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                    <tooltip>
+                        <Tooltip text="Use a valid email format like name@example.com" />
+                    </tooltip>
+                </TextField>
+
+                <Label text="Father's Contact No." textFill="#696868" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                    <font>
+                        <Font name="Candara" size="14.0" />
+                    </font>
+                    <style>-fx-font-weight: bold;</style>
+                </Label>
+                <TextField fx:id="fatherContactField" promptText="Enter father's contact number" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+
+                <!-- Row 2 -->
+                <Label text="Father's Occupation" textFill="#696868" GridPane.columnIndex="0" GridPane.rowIndex="2">
+                    <font>
+                        <Font name="Candara" size="14.0" />
+                    </font>
+                    <style>-fx-font-weight: bold;</style>
+                </Label>
+                <ChoiceBox fx:id="fatherOccupationChoice" prefWidth="250.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+
+                <Label text="Father's Qualification" textFill="#696868" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                    <font>
+                        <Font name="Candara" size="14.0" />
+                    </font>
+                    <style>-fx-font-weight: bold;</style>
+                </Label>
+                <ChoiceBox fx:id="fatherQualificationChoice" prefWidth="250.0" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+
+                <!-- Row 3 -->
+                <Label text="Mother's Name" textFill="#696868" GridPane.columnIndex="0" GridPane.rowIndex="3">
+                    <font>
+                        <Font name="Candara" size="14.0" />
+                    </font>
+                    <style>-fx-font-weight: bold;</style>
+                </Label>
+                <TextField fx:id="motherNameField" promptText="Enter mother's full name" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="3" />
+
+                <!-- Row 4 -->
+                <Label text="Mother's Email" textFill="#696868" GridPane.columnIndex="0" GridPane.rowIndex="4">
+                    <font>
+                        <Font name="Candara" size="14.0" />
+                    </font>
+                    <style>-fx-font-weight: bold;</style>
+                </Label>
+                <TextField fx:id="motherEmailField" promptText="Enter mother's email address" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+
+                <Label text="Mother's Contact No." textFill="#696868" GridPane.columnIndex="2" GridPane.rowIndex="4">
+                    <font>
+                        <Font name="Candara" size="14.0" />
+                    </font>
+                    <style>-fx-font-weight: bold;</style>
+                </Label>
+                <TextField fx:id="motherContactField" promptText="Enter mother's contact number" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+
+                <!-- Row 5 -->
+                <Label text="Mother's Occupation" textFill="#696868" GridPane.columnIndex="0" GridPane.rowIndex="5">
+                    <font>
+                        <Font name="Candara" size="14.0" />
+                    </font>
+                    <style>-fx-font-weight: bold;</style>
+                </Label>
+                <ChoiceBox fx:id="motherOccupationChoice" prefWidth="250.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+
+                <Label text="Mother's Qualification" textFill="#696868" GridPane.columnIndex="2" GridPane.rowIndex="5">
+                    <font>
+                        <Font name="Candara" size="14.0" />
+                    </font>
+                    <style>-fx-font-weight: bold;</style>
+                </Label>
+                <ChoiceBox fx:id="motherQualificationChoice" prefWidth="250.0" GridPane.columnIndex="3" GridPane.rowIndex="5" />
+
+                <Label text="Total Earning" textFill="#696868" GridPane.columnIndex="0" GridPane.rowIndex="6">
+                    <font>
+                        <Font name="Candara" size="14.0" />
+                    </font>
+                    <style>-fx-font-weight: bold;</style>
+                </Label>
+                <TextField fx:id="totalEarning" promptText="Enter Family Total Earning" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+
+                <!-- Row 7: Buttons -->
+                <Button fx:id="saveButton"
+                        onAction="#handleSave"
+                        prefHeight="38.0"
+                        prefWidth="183.0"
+                        text="Save"
+                        GridPane.columnIndex="1"
+                        GridPane.columnSpan="2"
+                        GridPane.rowIndex="7"
+                        style="-fx-background-color: #B3BFFF; -fx-text-fill: #0d47a1; -fx-font-weight: bold;">
+                    <padding>
+                        <Insets top="10" right="30" bottom="10" left="30" />
+                    </padding>
+                </Button>
+
+                <Button fx:id="nextButton2"
+                        onAction="#goToAcademicDetail"
+                        prefHeight="38.0"
+                        prefWidth="188.0"
+                        text="Next"
+                        GridPane.columnIndex="3"
+                        GridPane.rowIndex="7"
+                        style="-fx-background-color: #4CAF50; -fx-text-fill: white; -fx-font-weight: bold;">
+                    <padding>
+                        <Insets top="10" right="30" bottom="10" left="30" />
+                    </padding>
+                </Button>
+
+            </children>
+        </GridPane>
+
+    </children>
+</AnchorPane>
