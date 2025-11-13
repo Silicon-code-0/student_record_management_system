@@ -26,38 +26,7 @@ Tech Stack
 | Build Tool | Maven                              |
 | IDE        | NetBeans  |
 
-SRMS/
-│
-├── src/
-│   └── main/
-│       ├── java/
-│       │   └── com/
-│       │       └── tcet/
-│       │           └── srms/
-│       │               ├── controller/
-│       │               │   ├── AddStudentController.java
-│       │               │   ├── DashboardController.java
-│       │               │   ├── LoginController.java
-│       │               │   └── ...
-│       │               │
-│       │               ├── model/
-│       │               ├──DbConnection.java
-│       │               └── ...
-│       │             
-│       │
-│       └── resources/
-│           └── com/
-│               └── tcet/
-│                   └── srms/
-│                       └── view/
-│                           ├── StudentDetail.fxml
-│                           ├── DashboardScreen.fxml
-│                           ├── LoginPage.fxml
-│                           └── ...
-│
-│
-├── pom.xml
-└── README.md
+<img width="420" height="603" alt="image" src="https://github.com/user-attachments/assets/f28c1d03-972d-4f07-b331-9dc020d41864" />
 
 
 
